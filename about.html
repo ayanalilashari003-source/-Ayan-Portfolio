@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About | Ayan Ali</title>
+
+<link rel="stylesheet" href="stlye.css">
+<link rel="stylesheet" href="about.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<nav>
+
+<div class="logo">
+<h2>Ayan<span>.</span></h2>
+</div>
+
+<ul class="menu">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html" class="active">About</a></li>
+<li><a href="skills.html">Skills</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+
+</nav>
+
+<section class="about">
+
+<div class="about-img">
+
+<img src="WhatsApp Image 2026-06-23 at 10.46.15 PM.jpeg" alt="Ayan Ali">
+
+</div>
+
+<div class="about-content">
+
+<h4>ABOUT ME</h4>
+
+<h1>Frontend Developer</h1>
+
+<p>
+I'm Ayan Ali, a passionate Frontend Developer who enjoys creating modern,
+responsive and user-friendly websites. I work with HTML, CSS,
+JavaScript and Bootstrap to build clean, attractive interfaces that
+provide a great user experience.
+</p>
+
+<p id="moreText">
+
+I am continuously improving my JavaScript skills and building real-world
+projects to become a Full Stack Developer. I enjoy learning new
+technologies, solving problems, and writing clean, maintainable code.
+My goal is to create professional websites that help businesses and
+individuals establish a strong online presence.
+
+</p>
+
+<button onclick="toggleText()" id="readBtn">
+Read More
+</button>
+
+</div>
+
+</section>
+
+<script>
+
+const text=document.getElementById("moreText");
+const btn=document.getElementById("readBtn");
+
+text.style.display="none";
+
+function toggleText(){
+
+if(text.style.display==="none"){
+
+text.style.display="block";
+btn.innerHTML="Read Less";
+
+}
+else{
+
+text.style.display="none";
+btn.innerHTML="Read More";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
